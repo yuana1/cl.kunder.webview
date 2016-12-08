@@ -47,7 +47,7 @@ But only if no `*://` or `javascript:` is present at the front of the URL.
 
 Then, to close the second webview and return to the main view, call in your second webview (the opened webview, not the main webview):
 ```javascript
-    webview.Close();
+    webview.Close(data); //data json object
 ```
 
 This will close and destroy the second webview.
@@ -74,6 +74,7 @@ __Parameters__:
 
 ### Close/Hide
 __Parameters__:
+- data: json object to subcribed callback function.(JSON object)
 - __successCallback__: Is triggered when the plugin is succesfully called. _(Function)_
 - __errorCallback__: Is triggered when the plugin fails to be called or is called with error. _(Function)_
 
